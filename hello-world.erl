@@ -3,5 +3,7 @@
 -export([start/0]).
 
 start() ->
-    M1 = #{name=>john, age=>25},
-    io:fwrite("~w", [map_size(M1)]).
+    X = 40.00,
+    Y = 50.00,
+    io:fwrite("~f~n", [X]),
+    io:fwrite("~e", [Y]).
