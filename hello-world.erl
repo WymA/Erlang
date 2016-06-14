@@ -3,4 +3,6 @@
 -export([start/0]).
 
 start() ->
-    io:fwrite("~w", [1+1]).
+    Bin1 = <<10, 20>>,
+    X = binary_to_list(Bin1),
+    io:fwrite("~w", [X]).
